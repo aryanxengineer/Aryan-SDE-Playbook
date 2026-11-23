@@ -1,0 +1,9 @@
+docs: add Java learning notes
+learn: understand JVM architecture
+dsa: solve array rotation problems
+practice: implement binary search
+backend: add employee CRUD APIs
+db: document SQL joins
+system-design: learn load balancing
+devops: practice Docker commands
+docs: update weekly progress
