@@ -1,4 +1,4 @@
-# Java Fundamentals
+# JDK vs JRE vs JVM, compile and run flow; install JDK and IntelliJ
 
 ### 1. JDK vs JRE vs JVM
 
@@ -20,6 +20,8 @@
 - The OS schedules the native threads for CPU execution and manages system resources.
 - The CPU executes the native machine instructions.
 
+
+# Variables, data types, operators, type casting
 
 ### 3. Variables
 > Variable is name of memory location used like a container to store value during Java program execution.

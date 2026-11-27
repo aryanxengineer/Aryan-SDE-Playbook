@@ -1,4 +1,4 @@
-## SQL Fundamentals
+# SQL: DBMS vs RDBMS, keys
 
 ### DBMS vs RDBMS
 > DBMS is a software used to store and manage data. RDBMS is an advanced form of DBMS where data is stored in related tables and relationships are maintained using keys. MySQL, Oracle and PostgreSQL are examples of RDBMS.
@@ -34,4 +34,21 @@
 
 ### Composite Key
 > A composite key is a key formed by combining two or more columns to uniquly identify a record. For example StudentId and CourseId.
+
+# SQL: SELECT, WHERE, DISTINCT, ORDER BY, LIMIT
+
+### SELECT
+> Select is used to fetch required data from one or more columns of a table. Either we can select all columns or few columns as per need.
+
+### WHERE
+> Where acts like a filter and return only those rows that satisfy a given condition.
+
+### DISTINCT
+> Distinct returns only unique values and eliminates duplicates from the result set.
+
+### ORDER BY
+> Order by is used to sort the query results in ascending or descending order.
+
+### LIMIT
+> LIMIT is used to fetch only specified numbers of records from a result set.
 

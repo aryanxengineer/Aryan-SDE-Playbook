@@ -111,4 +111,77 @@ public class Basics {
         }
         return sum;
     }
+
+    // Day 3 Problems
+
+    public void maxAndMinElement (int[] arr) {
+        int min = arr[0];
+        int max = arr[0];
+
+        for (int i = 1; i < arr.length; i++) {
+            if (min > arr[i]) {
+                min = arr[i];
+            }
+            if (max < arr[i]) {
+                max = arr[i];
+            }
+        }
+        System.out.println("Max " + max + " Min " + min);
+    }
+
+    public int secondLargest (int[] arr) {
+        int largest = Math.max(arr[0], arr[1]);
+        int larger = Math.min(arr[0], arr[1]);
+
+        for (int i : arr) {
+            if(i > largest) {
+                larger = largest;
+                largest = i;
+            }
+            else if (i < largest && i > larger) {
+                larger = i;
+            }
+        }
+
+        return larger;
+    }
+
+    public void reverseArray (int[] arr) {
+        int start = 0;
+        int end = arr.length - 1;
+
+        while (start < end) {
+            int temp = arr[end];
+            arr[end--] = arr[start];
+            arr[start++] = temp;
+        }
+    }
+
+    public int[] removeDuplicate (int[] arr) {
+        int uni = 0;
+        int tracer = 1;
+
+        while (tracer < arr.length) {
+            if(arr[tracer] != arr[uni]) {
+                arr[++uni] = arr[tracer++];
+            } else {
+                tracer++;
+            }
+        }
+        return arr;
+    }
+
+    public int[] moveZeroes (int[] arr) {
+        int zeroTracer = 0;
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] != 0) {
+                int temp = arr[zeroTracer];
+                arr[zeroTracer++] = arr[i];
+                arr[i] = temp; 
+            }
+        }
+        return arr;
+    }
+
 }

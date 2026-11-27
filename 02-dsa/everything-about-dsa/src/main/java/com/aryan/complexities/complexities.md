@@ -1,4 +1,4 @@
-## Big O Notation
+# Big-O and Java for DSA (arrays, ArrayList, HashMap, StringBuilder). 1h: complexity examples
 
 ### What is Big O ?
 > Big O notation is a mathematical way to describe how runtime and memory usage of an algorithm grows as input size increases. It helps us compare efficiency of different algorithms.

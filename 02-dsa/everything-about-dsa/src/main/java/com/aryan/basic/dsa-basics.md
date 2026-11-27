@@ -1,4 +1,4 @@
-## Basics in Data Structures & Algorithms
+# Numbers: Prime, Factorial, Fibonacci (iterative), Reverse Number, Palindrome Number
 
 ### Prime Numbers
 > Prime number is a positive number greater than 1 and divisible by only with 1 and itself. If number has any other factor, then it is not a prime number.
@@ -25,6 +25,8 @@ Iterative solution is better, because it uses constant space o(1), while recursi
 ### Palindrome Number
 > A palindrome number is a number that reads the same from left to right and right to left.
 
+# Armstrong, GCD/LCM, digit sum; pyramid and diamond patterns
+
 ### Armstrong Number
 > An armstrong number is a number whose sum of each digits raised to the power of total digits is equal to the original number.
 
@@ -37,4 +39,29 @@ Iterative solution is better, because it uses constant space o(1), while recursi
 > LCM is lowest common multiple that divides by the both numbers completely without leaving any remainder. The efficient way to find LCM is only using it's formula LCM = (a x b) / GCD.
 
 ### Digit Sum
-> To find digit sum, I repeatedly extract last digit using modulo operator, then add to sum variable finally remove the digit using integer division.   
+> To find digit sum, I repeatedly extract last digit using modulo operator, then add to sum variable finally remove the digit using integer division.
+
+# Arrays: Max/Min, Second Largest, Reverse, Remove Duplicates (sorted), Move Zeros
+
+### Find Maximum and Minimum elelments
+> An array contains multiple values. To find the maximum or minimum we traverse an array once and keep updating our answer whenever we find a smaller or larger value.
+
+- Since every element must be checked atleast once. O(n) is the optimal solution. We use constant extra space.
+
+### Second largest number
+> Instead of sorting the elements and taking the second largest number. I maintain largest and second largest during traversal. This reduces time complexity from O (n log n) to O (n).
+
+#### Why not sort ?
+Sorting takes O (n log n) time, while a single traverse solves it in O (n).
+
+### Reverse an Array
+> I use two pointer approach. first stays in the beginning and second stays at the end. I swap the elements until they meet.
+
+### Remove duplicates from sorted array
+> Since an array is sorted, duplicates are adjacent. I use two pointer where one tracks unique element and other scans an array.
+
+#### Can we do this for unsorted array ?
+Yes, using hashset, but extra space will be required.
+
+### Move zeros to end
+> I maintain a pointer indicating where non zero element should be placed. Whenever I find a non-zero element. I swap it into that position.
